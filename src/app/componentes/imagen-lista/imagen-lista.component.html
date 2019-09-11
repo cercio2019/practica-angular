@@ -1,1 +1,13 @@
-<p>imagen-lista works!</p>
+<div class="row">
+    <div class="col-md-4 p-4" *ngFor="let imagen of listaImagenes">
+        <div class="card card-photo" (click)="selectImagen(imagen._id)">
+            <div class="card-header">
+                {{imagen.nombre}}
+            </div>
+            <img [src]="'http://localhost:3000/' + imagen.imagenUrl" class="img-card-top w-100">
+            <div class="card-body">
+                <p>{{imagen.descripcion}}</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -16,24 +16,24 @@ export class ImagenesService {
     const datos = new FormData();
     datos.append('nombre', nombre);
     datos.append('descripcion', descripcion);
-    datos.append('imagen', foto);
-    return this.http.post(`${this.URL}`, datos)
+    datos.append('imagenUrl', foto);
+    return this.http.post(`${this.URL}/imagenes`, datos)
   }
 
   getImagenes(){
-    return this.http.get<Imagen[]>(`${this.URL}`)
+    return this.http.get<Imagen[]>(`${this.URL}/imagenes`)
   }
 
   getImagen(id:string){
-    return this.http.get<Imagen[]>(`${this.URL}/${id}`)
+    return this.http.get<Imagen[]>(`${this.URL}/imagenes/${id}`)
   }
 
   editarImagen(id:string, nombre:string, descripcion:string){
-    return this.http.put(`${this.URL}/${id}`, {nombre, descripcion})
+    return this.http.put(`${this.URL}/imagenes/${id}`, {nombre, descripcion})
   }
 
   eliminarImagen(id:string){
-    return this.http.delete(`${this.URL}/${id}`)
+    return this.http.delete(`${this.URL}/imagenes/${id}`)
   }
 
 }

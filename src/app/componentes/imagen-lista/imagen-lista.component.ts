@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
+
+import {ImagenesService} from '../../servicio/imagenes.service';
+import {Imagen} from '../../interfaces/imagen';
 
 @Component({
   selector: 'app-imagen-lista',
@@ -7,9 +11,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImagenListaComponent implements OnInit {
 
-  constructor() { }
+  listaImagenes: Imagen[] = [];
+
+  constructor(private imagenService: ImagenesService, private router: Router) { }
 
   ngOnInit() {
+    this.imagenService.getImagenes().subscribe(
+      res => {
+        this.listaImagenes = res;
+      },
+      err => console.log(err)
+    );
+  }
+
+  selectImagen(id:string){
+    this.router.navigate(['/imagenes', id])
   }
 
 }
