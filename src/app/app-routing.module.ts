@@ -8,7 +8,7 @@ import {ImagenPreviaComponent} from './componentes/imagen-previa/imagen-previa.c
 const routes: Routes = [
   {path: 'imagenes', component: ImagenListaComponent },
   {path: 'imagenes/new', component: ImagenFormComponent},
-  {path: 'imagenes/:id', component: ImagenPreviaComponent},
+  {path: 'imagenes/ver/:id', component: ImagenPreviaComponent},
   {path:'', redirectTo:'/imagenes', pathMatch:'full'}
 ];
 

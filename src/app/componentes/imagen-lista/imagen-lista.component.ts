@@ -19,6 +19,7 @@ export class ImagenListaComponent implements OnInit {
     this.imagenService.getImagenes().subscribe(
       res => {
         this.listaImagenes = res;
+        console.log(this.listaImagenes)
       },
       err => console.log(err)
     );

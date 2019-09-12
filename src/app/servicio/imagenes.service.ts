@@ -24,11 +24,11 @@ export class ImagenesService {
     return this.http.get<Imagen[]>(`${this.URL}/imagenes`)
   }
 
-  getImagen(id:string){
+  getImagen(id:string | Number){
     return this.http.get<Imagen[]>(`${this.URL}/imagenes/${id}`)
   }
 
-  editarImagen(id:string, nombre:string, descripcion:string){
+  editarImagen(id:string | Number, nombre:string, descripcion:string){
     return this.http.put(`${this.URL}/imagenes/${id}`, {nombre, descripcion})
   }
 
