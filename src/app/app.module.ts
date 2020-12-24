@@ -4,18 +4,12 @@ import {HttpClientModule} from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavegadorComponent } from './componentes/navegador/navegador.component';
-import { ImagenFormComponent } from './componentes/imagen-form/imagen-form.component';
-import { ImagenPreviaComponent } from './componentes/imagen-previa/imagen-previa.component';
-import { ImagenListaComponent } from './componentes/imagen-lista/imagen-lista.component';
+import { UsuariosComponent } from './componentes/usuarios/usuarios.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavegadorComponent,
-    ImagenFormComponent,
-    ImagenPreviaComponent,
-    ImagenListaComponent
+    UsuariosComponent
   ],
   imports: [
     BrowserModule,
