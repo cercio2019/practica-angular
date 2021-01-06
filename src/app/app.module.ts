@@ -5,11 +5,13 @@ import {HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UsuariosComponent } from './componentes/usuarios/usuarios.component';
+import { MapboxComponent } from './componentes/mapbox/mapbox.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UsuariosComponent
+    UsuariosComponent,
+    MapboxComponent
   ],
   imports: [
     BrowserModule,

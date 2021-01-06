@@ -1,0 +1,16 @@
+<div id="map"></div>
+ 
+<div class="map-overlay">
+<fieldset>
+<input
+id="feature-filter"
+type="text"
+placeholder="Filter results by name"
+/>
+</fieldset>
+<div id="feature-listing" class="listing">
+    <div  *ngFor="let personas of contacts"   >
+        <p> <a href="#">{{personas.contact}}</a></p> <button (click)="mostrarInfo(personas)" >buscar</button>
+    </div>
+</div>
+</div>

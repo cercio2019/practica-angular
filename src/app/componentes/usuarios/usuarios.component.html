@@ -1,0 +1,40 @@
+
+<h3>Numero de actividades: {{nroActividades}} de actividades</h3>
+
+<table>
+    <thead>
+        <th style="padding: 2px;" >id </th>
+        <th style="padding: 2px;" > title </th>
+        <th style="padding: 2px;" > dueData </th>
+        <th style="padding: 2px;" > Completed </th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let activ of lista[0]" style="margin: 5px; "  >
+            <td style="padding: 5px;" > {{ activ.id }} </td>
+            <td style="padding: 5px;" > {{ activ.title }} </td>
+            <td style="padding: 5px;" > {{ activ.dueDate }} </td>
+            <td style="padding: 5px;" > {{activ.completed}} </td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h3>Numero de autores: {{nroAutores}} autores</h3>
+
+<div *ngFor ="let lib of libreria " >
+
+    <div>
+        <h4>Autor : {{ lib.nombre }} {{lib.apellido}} </h4>
+    </div>
+
+    <div>
+        <h5> Titulo : {{lib.titulo}}</h5>
+    </div>
+
+    <div>
+        <p> <strong>Descripcion:</strong> {{lib.descripcion}} </p>
+    </div>
+    <div>
+        <p>Fecha de publicacion: {{ lib.fechaPublic}} </p>
+    </div>
+</div>
