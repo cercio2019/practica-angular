@@ -1,0 +1,39 @@
+<form action="">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 mx-auto">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>New Worker</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <input type="text" name="contact"  [(ngModel)]="contact.contact" placeholder="add new contact" class="form-control"  />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="contactEmail" [(ngModel)]="contact.contactEmail"  placeholder="add Email"  class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="contactPhone" [(ngModel)]="contact.contactPhone" placeholder="add Phone" class="form-control"  />
+                        </div>
+                        <div class="form-group">
+                            <select name="contactLocation" [(ngModel)]="contact.contactLocation" class="form-control" (change)="changeMapbox()" >
+                                <option value="0">Seleccionar</option>
+                                <option  *ngFor="let local of locations" value="{{local.id}}" > {{local.location}} </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-block" (click)="saveWorker()" >
+                                Save
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <div id="map"></div>
+</div>

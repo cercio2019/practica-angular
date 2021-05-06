@@ -4,19 +4,21 @@ import {HttpClientModule} from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UsuariosComponent } from './componentes/usuarios/usuarios.component';
 import { MapboxComponent } from './componentes/mapbox/mapbox.component';
+import { FormWorkersComponent } from './componentes/form-workers/form-workers.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UsuariosComponent,
-    MapboxComponent
+    MapboxComponent,
+    FormWorkersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

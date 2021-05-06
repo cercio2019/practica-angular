@@ -1,0 +1,45 @@
+[
+
+    {
+        "id" : 1,
+        "location" : "Caracas/Venezuela",
+        "lat_long" : [-67.0304514, 10.4683612]
+    },
+
+    {
+        "id" : 2,
+        "location" : "Ciudad de Mexico/Mexico",
+        "lat_long" : [-99.2836978, 19.39068]
+    },
+
+    {
+        "id" : 3,
+        "location" : "Bogota/Colombia",
+        "lat_long" : [-74.2478927, 4.6482837]
+    },
+
+    {
+        "id" : 4,
+        "location" : "Santiago de Chile/Chile",
+        "lat_long" : [-70.7699153, -33.4727092]
+    },
+
+    {
+        "id" : 5,
+        "location" : "Buenos Aires/Argentina",
+        "lat_long" : [-58.5033383, -34.6158037]
+    },
+
+    {
+        "id" : 6,
+        "location" : "Madrid/España",
+        "lat_long" : [-3.8196199, 40.4378698]
+    },
+
+    {
+        "id" : 7,
+        "location" : "New York/USA",
+        "lat_long" : [-74.2598622, 40.6971494]
+    }
+
+]

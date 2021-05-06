@@ -1,11 +1,77 @@
+.menu {
+  -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+  -webkit-overflow-scrolling: touch;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  box-sizing: border-box;
+  height: 100%;  
+  outline: none;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  padding: 0;
+  position: fixed !important;
+  top: 3.3rem;  
+  width: 20%;
+  will-change: transform;
+  z-index: 9999 !important;
+}
+
+.container-nav {
+    margin-top: 1rem;
+    margin: 0;
+}
+
+.main-nav {
+    text-align: center;
+}
+
+.main-nav li:last-child a {
+    border-bottom: 2px solid #fff;
+}
+
+.main-nav li {
+    display: block;
+}
+
+.main-nav li p {
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+    transition: all 0.5s;
+    border-top: 2px solid #fff;
+}
+
+.main-nav li:hover p,
+.main-nav li.active p {
+    background: #fff;
+    color: #39a5c0;
+    cursor: pointer;
+}
+
+
+.section {
+    color: #fff;
+    width: 55%;
+    height: 20rem;
+    right: 10%;
+    left: 50%;
+    position: relative;
+    padding-bottom: 80px;
+    border-bottom: 3px solid rgba(250, 250, 250, 0.25);
+}
 
 
 #map {
-    position: absolute;
-    left: 25%;
-    top: 0;
-    bottom: 0;
+    position: fixed;
+    top: 5rem;
+    left: 17rem;
+    bottom: 1rem;
     width: 75%;
+    height: 35rem;
     }
     .map-overlay {
     position: absolute;
@@ -27,37 +93,4 @@
     margin: 0;
     }
      
-    .map-overlay input {
-    display: block;
-    border: none;
-    width: 100%;
-    border-radius: 3px;
-    padding: 10px;
-    margin: 0;
-    box-sizing: border-box;
-    }
-     
-    .map-overlay .listing {
-    overflow: auto;
-    max-height: 100%;
-    }
-     
-    .map-overlay .listing > * {
-    display: block;
-    padding: 5px 10px;
-    margin: 0;
-    }
-     
-    .map-overlay .listing a {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    color: #404;
-    text-decoration: none;
-    }
-     
-    .map-overlay .listing a:last-child {
-    border: none;
-    }
-     
-    .map-overlay .listing a:hover {
-    background: #f0f0f0;
-    }
+    
